@@ -1,0 +1,129 @@
+/********** Setup **********/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  /***** Primary *****/
+  --vDkMagenta: #502050;
+  --sftPink: #EE68A4;
+
+  /***** Natrual *****/
+  --dkGryMagenta: #937B92;
+  --ltGryMagenta: #F7F2F7;
+  --white: #FFFFFF;
+
+  font-size: 62.5%;
+  font-family: 'League Spartan', sans-serif; /* 400, 500, & 700 */
+}
+
+/********** Styles **********/
+
+.whtfc {
+  color: var(--white);
+}
+
+main {
+  background-color: var(--white);
+  width: 375px;
+  display: grid;
+  grid-auto-flow: row;
+  /*grid-template-columns: 100%;*/
+  gap: 16px;
+  border: 1px solid blue;
+}
+
+h1, .fiveStar p {
+  color: var(--vDkMagenta);
+}
+
+h1, section {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 0.78;
+  letter-spacing: -0.5;
+  padding:0 2.5rem;
+}
+
+section {
+  color: var(--dkGryMagenta);
+  font-size: 1.85rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.4;
+  padding: 0 1.2rem;
+}
+
+.fiveStar {
+  width: 327px;
+  height: 78px;
+  border-radius: 8px;
+  background-color: var(--ltGryMagenta);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.stars {
+  display: flex;
+  gap: 8.45px;
+}
+
+.fiveStar p {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.reviewer {
+  width: 327px;
+  height: 248px;
+  background-color: var(--vDkMagenta);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding-left: 3.1rem;
+}
+
+.buyer-header {
+  display: flex;
+  gap: 2.3rem;
+}
+
+.buyer-img {
+  max-width: 4rem;
+  border-radius: 50%;
+}
+
+.buyer {
+  align-self: center;
+  font-size: 1.55rem;
+  font-weight: 700;
+  list-style-type: none;
+  padding: 0;
+}
+
+.buyer-quote {
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1.25;
+  letter-spacing: -0.3;
+  padding-right: 2.4rem;
+}
+
+.buyer li:nth-of-type(2) {
+  color: var(--sftPink);
+  margin-top: .45rem;
+}
+
+
